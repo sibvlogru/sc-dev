@@ -1,4 +1,7 @@
 {
     "uri": "https://github.com/sibvlogru/sc-dev.git",
-    "description": "Test application as scene"
+    "description": "Test application as scene",
+    "input": [
+        {}
+    ]
 }
