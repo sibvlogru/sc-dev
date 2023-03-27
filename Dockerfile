@@ -1,11 +1,17 @@
-FROM python:3.6
+# Используем за основу образ Node.js
+FROM node:14
+
+# Создаем директорию приложения внутри контейнера
 WORKDIR /app
-RUN apt-get update
-RUN apt-get install -y build-essential cmake libboost-all-dev python3-dev ffmpeg libsm6 libxext6
-RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash -
-RUN apt-get -y install nodejs
+
+# Копируем package.json и package-lock.json в директорию приложения
+COPY package*.json ./
+
+# Устанавливаем зависимости
+RUN npm install
+
+# Копируем исходный код в директорию приложения
 COPY . .
-RUN pip3 install --upgrade pip
-RUN pip3 install -r requirements.txt
-# CMD [ "python3", "test.py"]
-CMD [ "node", "./server/index.js" ]
+
+# Указываем команду, которая будет выполняться при запуске контейнера
+CMD ["node", "server.js"]
