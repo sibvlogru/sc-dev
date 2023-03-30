@@ -1,0 +1,6 @@
+{
+    "name": "node.js",
+    "type": "location",
+    "src": "./",
+    "description": "Execute JS function in node.js environment"
+}
