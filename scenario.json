@@ -1,6 +1,7 @@
 {
     "name": "node.js",
-    "type": "location",
+    "entity": "location",
+    "type": "js-handler",
     "src": "./",
     "description": "Execute JS function in node.js environment"
 }
