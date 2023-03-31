@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"Build message\""
+    "build": "echo \"Build message\"",
+    "start": "node ./index.js"
   },
   "repository": {
     "type": "git",
