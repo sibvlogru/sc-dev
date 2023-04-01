@@ -3,5 +3,9 @@
     "entity": "location",
     "type": "js-handler",
     "src": "./",
-    "description": "Execute JS function in node.js environment"
+    "description": "Execute JS function in node.js environment",
+    "scripts": {
+        "build": "npm run build",
+        "start": "npm run start"
+    }
 }
