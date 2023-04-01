@@ -4,6 +4,10 @@
     "type": "js-handler",
     "src": "./",
     "description": "Execute JS function in node.js environment",
+    "recommended": {
+        "provider": "storage",
+        "apitype": "cli"
+    },
     "scripts": {
         "build": "npm run build",
         "start": "npm run start"
